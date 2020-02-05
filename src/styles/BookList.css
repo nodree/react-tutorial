@@ -28,6 +28,25 @@
   margin: 0;
 }
 
+.book-detail button {
+  background-color: #f2cb69;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.book-detail button:hover {
+  background-color: #f3a847;
+}
+
+.book-detail button:active {
+  border: none;
+}
+
+.book-detail button:visited {
+  border: none;
+}
 .book-image {
   width: 100%;
 }
