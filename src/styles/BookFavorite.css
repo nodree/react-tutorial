@@ -1,0 +1,31 @@
+.favorite-container {
+  grid-column: 8/11;
+}
+
+.favorite-container h2 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1rem;
+}
+
+.favorite-card {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-bottom: 0.5rem;
+}
+
+.favorite-image {
+  width: 100%;
+  height: 7rem;
+  grid-column: 1/3;
+}
+
+.favorite-detail {
+  grid-column: 3/7;
+  padding: 0 0.5rem;
+}
+
+.favorite-detail h4{
+  margin: 0;
+}
