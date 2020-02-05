@@ -38,6 +38,11 @@ class App extends React.Component{
   }
 
   addToFavorite = id => {
+    for(let i = 0; i < this.state.favorites.length; i++) {
+      if(this.state.favorites[i].id === id) {
+        return false
+      }
+    }
     const data = this.state.books.find(item => item.id === id);
     this.setState({
       favorites: [...this.state.favorites, data]
