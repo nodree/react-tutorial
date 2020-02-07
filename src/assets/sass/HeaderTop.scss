@@ -1,0 +1,26 @@
+@import "variables";
+@import "mixins";
+@import "functions";
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 2rem;
+  &__brand {
+    color: red;
+  }
+  &__nav-link {
+    color: blue;
+    &--primary {
+      background: $color-primary-one;
+      @include btn;
+      width: wid(100, 2) * 1px;
+    }
+    &--secondary {
+      background: $color-secondary-1;
+      @include btn;
+    }
+  }
+}
+
+

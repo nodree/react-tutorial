@@ -1,23 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "../assets/sass/HeaderTop.scss";
 
 class HeaderTop extends React.Component {
   render() {
     return(
-      <div style={head}>
-        <div><h1>heading</h1></div>
-        <div>
-          <Link to="/">to home</Link>
-          <Link to="/about">to about</Link>
+      <div className="nav-container">
+        <div className="nav-container__brand">
+          <h1>gitlab logo</h1>
+        </div>
+        <div className="nav-container__nav-link">
+          <button className="nav-container__nav-link--primary">primary</button>
+          <button className="nav-container__nav-link--secondary">secondary</button>
         </div>
       </div>
     )
   }
-}
-
-const head = {
-  display: "inline-block",
-  top: "0"
 }
 
 
